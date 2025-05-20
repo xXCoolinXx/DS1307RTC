@@ -3,6 +3,7 @@
 #include <DS1307RTC.h>
 
 void setup() {
+  Wire.begin(); // Start I2C
   Serial.begin(9600);
   while (!Serial) ; // wait for serial
   delay(200);

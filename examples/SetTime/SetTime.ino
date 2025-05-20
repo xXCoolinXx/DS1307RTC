@@ -10,6 +10,8 @@ const char *monthName[12] = {
 tmElements_t tm;
 
 void setup() {
+  Wire.begin(); // Start I2C
+
   bool parse=false;
   bool config=false;
 
