@@ -35,9 +35,6 @@
 
 DS1307RTC::DS1307RTC()
 {
-  #ifndef DS1307_NO_WIRE
-  Wire.begin();
-  #endif
 }
   
 // PUBLIC FUNCTIONS
