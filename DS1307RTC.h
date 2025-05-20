@@ -33,12 +33,6 @@ class DS1307RTC
 #undef RTC // workaround for Arduino Due, which defines "RTC"...
 #endif
 
-// Add Wire.begin to the header file so that user's may specify DS1307_NO_WIRE to do their own Wire.begin call
-#ifndef DS1307_NO_WIRE
-  Wire.begin();
-  #define DS1307_NO_WIRE
-#endif
-
 extern DS1307RTC RTC;
 
 #endif
